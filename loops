@@ -1,0 +1,12 @@
+#Problem statement here: https://www.hackerrank.com/challenges/python-loops/problem
+
+if __name__ == '__main__':
+    n = int(input())
+
+a = result = 0
+
+for a in range(0, n):
+    if (a < n):
+        result = a * a
+        print(result)
+        a = a + 1
