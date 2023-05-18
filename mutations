@@ -1,0 +1,10 @@
+#Problem statement here: https://www.hackerrank.com/challenges/python-mutations/problem
+def mutate_string(string, position, character):
+ 
+    l = list(string)
+    l[position] = character
+    s_new = ''.join(l)
+    return(s_new)
+ 
+    # s_new = string[:position] + character + string[(position+1):]
+    # return(s_new)
