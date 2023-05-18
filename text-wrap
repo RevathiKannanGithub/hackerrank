@@ -1,0 +1,4 @@
+#Problem statement here: https://www.hackerrank.com/challenges/text-wrap/problem
+def wrap(string, max_width):
+    result = textwrap.fill(string, max_width)
+    return result
