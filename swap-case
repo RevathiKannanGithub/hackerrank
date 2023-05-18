@@ -1,0 +1,13 @@
+#Problem statement here: https://www.hackerrank.com/challenges/swap-case/problem
+def swap_case(s):
+    out_s = []
+    if (len(s) > 0 and len(s) <= 1000):
+       for i in range(0, len(s)):
+           if ((s[i].isupper()) == True):
+               out_s.append(s[i].lower())
+           elif ((s[i].islower()) == True):
+               out_s.append(s[i].upper())
+           else:
+               out_s.append(s[i])
+    result = ""
+    return (result.join(out_s))
