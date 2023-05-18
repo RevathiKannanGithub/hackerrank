@@ -1,0 +1,75 @@
+#Problem statement here: https://www.hackerrank.com/challenges/string-validators/problem
+if __name__ == '__main__':
+
+    s = input()
+    a = b = c = d = e = 0
+    
+    if (len(s) > 0 and len(s) < 1000):
+
+# PROCESS isalnum()
+        for i in range(0, len(s), 1):
+            if (s[i].isalnum() == True):
+               a = 1
+               break
+            else:
+               a = 0
+               continue
+        if (a == 1):
+           print ('True')
+        else:
+           print ('False')            
+
+# PROCESS isalpha()
+        for i in range(0, len(s), 1):
+            if (s[i].isalpha() == True):
+               b = 1
+               break
+            else:
+               b = 0
+               continue
+        if (b == 1):
+           print ('True')
+        else:
+           print ('False')                 
+                                  
+
+# PROCESS isdigit()
+        for i in range(0, len(s), 1):
+            if (s[i].isdigit() == True):
+               c = 1
+               break
+            else:
+               c = 0
+               continue
+        if (c == 1):
+           print ('True')
+        else:
+           print ('False')   
+                                                  
+
+# PROCESS islower()
+        for i in range(0, len(s), 1):
+            if (s[i].islower() == True):
+               d = 1
+               break
+            else:
+               d = 0
+               continue
+        if (d == 1):
+           print ('True')
+        else:
+           print ('False')            
+
+# PROCESS isupper()
+        for i in range(0, len(s), 1):
+            if (s[i].isupper() == True):
+               e = 1
+               break
+            else:
+               e = 0
+               continue
+        if (e == 1):
+           print ('True')
+        else:
+           print ('False')   
+
