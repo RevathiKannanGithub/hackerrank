@@ -1,0 +1,38 @@
+#Problem statement here: https://www.hackerrank.com/challenges/find-second-maximum-number-in-a-list/problem
+def find2largest(new_li, n):
+    sort_li = sorted(new_li)
+    
+    final_li = []
+
+    for num in sort_li:
+        if num not in final_li:
+            final_li.append(num)
+     
+    len_li = len(final_li)
+    print (final_li[len_li - 2])
+
+if __name__ == '__main__':
+    n = int(input())
+
+    li = []
+    for i in map(int, input().split()):
+        li.append(i)
+
+    # find the maximum value in array
+    max = li[0]
+    for x in range(0, (n-1) ):
+        if li[x] > max:
+            max = li[x]
+
+    new_li = []
+
+    if (n >= 2) and (n <=10):
+
+        for a in range(0, n):
+
+            if (li[a] >= -100) and (li[a] <= 100):
+    
+               new_li.append(li[a])
+             
+find2largest(new_li, n)
+
