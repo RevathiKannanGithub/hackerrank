@@ -1,0 +1,23 @@
+#Problem statement here: https://www.hackerrank.com/challenges/find-a-string/problem
+import re
+
+def count_substring(string, sub_string):
+
+    final_string = string.replace(" ", "")
+    new_final_string = final_string.replace(r"\n", "\t")
+
+    in_count = 0
+    index = 0
+    
+    while index < len(new_final_string):
+          index = new_final_string.find(sub_string, index)
+          if index == -1:
+             break
+          index = index + (len(sub_string) - 1)
+          in_count += 1   
+
+    if in_count < 0:
+       in_count = 0
+    count = in_count
+    
+    return count
