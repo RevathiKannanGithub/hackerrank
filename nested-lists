@@ -1,0 +1,11 @@
+#Problem statement here: https://www.hackerrank.com/challenges/nested-list/problem
+if __name__ == '__main__':
+    n = int(input())
+    
+    nested_list = [[input(), float(input())] for _ in range(n)]
+    
+    second_low_grade = sorted(set(grade for name, grade in nested_list))[1]
+    
+    for name, grade in sorted(nested_list):
+        if grade == second_low_grade:
+            print(name)
